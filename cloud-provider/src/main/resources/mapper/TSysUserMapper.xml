@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="it.diao.mapper.TSysUserMapper">
+
+    <resultMap id="BaseResultMap" type="it.diao.entry.TSysUser">
+            <result property="fUserid" column="F_USERID" jdbcType="VARCHAR"/>
+            <result property="fAccountcode" column="F_ACCOUNTCODE" jdbcType="VARCHAR"/>
+            <result property="fAccountpassword" column="F_ACCOUNTPASSWORD" jdbcType="VARCHAR"/>
+            <result property="fUsername" column="F_USERNAME" jdbcType="VARCHAR"/>
+            <result property="fSex" column="F_SEX" jdbcType="VARCHAR"/>
+            <result property="fUserheaduri" column="F_USERHEADURI" jdbcType="VARCHAR"/>
+            <result property="fMobilephone" column="F_MOBILEPHONE" jdbcType="VARCHAR"/>
+            <result property="fOfficetel" column="F_OFFICETEL" jdbcType="VARCHAR"/>
+            <result property="fOfficefax" column="F_OFFICEFAX" jdbcType="VARCHAR"/>
+            <result property="fPostaladdress" column="F_POSTALADDRESS" jdbcType="VARCHAR"/>
+            <result property="fPostalcode" column="F_POSTALCODE" jdbcType="VARCHAR"/>
+            <result property="fEmail" column="F_EMAIL" jdbcType="VARCHAR"/>
+            <result property="fPasswordvaliddate" column="F_PASSWORDVALIDDATE" jdbcType="TIMESTAMP"/>
+            <result property="fUserstate" column="F_USERSTATE" jdbcType="INTEGER"/>
+            <result property="fAccountstate" column="F_ACCOUNTSTATE" jdbcType="INTEGER"/>
+            <result property="fUserorder" column="F_USERORDER" jdbcType="INTEGER"/>
+            <result property="fMainunitid" column="F_MAINUNITID" jdbcType="VARCHAR"/>
+            <result property="fMaindepartid" column="F_MAINDEPARTID" jdbcType="VARCHAR"/>
+            <result property="fMainpositionid" column="F_MAINPOSITIONID" jdbcType="VARCHAR"/>
+            <result property="fIsinitialpwd" column="F_ISINITIALPWD" jdbcType="INTEGER"/>
+            <result property="fLockstate" column="F_LOCKSTATE" jdbcType="INTEGER"/>
+            <result property="fLockdate" column="F_LOCKDATE" jdbcType="TIMESTAMP"/>
+            <result property="fHouseno" column="F_HOUSENO" jdbcType="VARCHAR"/>
+            <result property="fEnforcode" column="F_ENFORCODE" jdbcType="VARCHAR"/>
+            <result property="fEpbenforcode" column="F_EPBENFORCODE" jdbcType="VARCHAR"/>
+            <result property="fUsernumber" column="F_USERNUMBER" jdbcType="VARCHAR"/>
+            <result property="fCreateuserid" column="F_CREATEUSERID" jdbcType="VARCHAR"/>
+            <result property="fCreateusername" column="F_CREATEUSERNAME" jdbcType="VARCHAR"/>
+            <result property="fCreatedeptid" column="F_CREATEDEPTID" jdbcType="VARCHAR"/>
+            <result property="fCreatedeptname" column="F_CREATEDEPTNAME" jdbcType="VARCHAR"/>
+            <result property="fCreateunitid" column="F_CREATEUNITID" jdbcType="VARCHAR"/>
+            <result property="fCreateuintname" column="F_CREATEUINTNAME" jdbcType="VARCHAR"/>
+            <result property="fCreatetime" column="F_CREATETIME" jdbcType="TIMESTAMP"/>
+            <result property="fUpdateuserid" column="F_UPDATEUSERID" jdbcType="VARCHAR"/>
+            <result property="fUpdateusername" column="F_UPDATEUSERNAME" jdbcType="VARCHAR"/>
+            <result property="fUpdatedeptid" column="F_UPDATEDEPTID" jdbcType="VARCHAR"/>
+            <result property="fUpdatedeptname" column="F_UPDATEDEPTNAME" jdbcType="VARCHAR"/>
+            <result property="fUpdateunitid" column="F_UPDATEUNITID" jdbcType="VARCHAR"/>
+            <result property="fUpdateunitname" column="F_UPDATEUNITNAME" jdbcType="VARCHAR"/>
+            <result property="fUpdatetime" column="F_UPDATETIME" jdbcType="TIMESTAMP"/>
+            <result property="fIsinservice" column="F_ISINSERVICE" jdbcType="INTEGER"/>
+            <result property="fIspost" column="F_ISPOST" jdbcType="INTEGER"/>
+            <result property="fIsfieldper" column="F_ISFIELDPER" jdbcType="INTEGER"/>
+            <result property="fMepupdatetime" column="F_MEPUPDATETIME" jdbcType="TIMESTAMP"/>
+            <result property="fCityupdatetime" column="F_CITYUPDATETIME" jdbcType="TIMESTAMP"/>
+            <result property="fEducationcode" column="F_EDUCATIONCODE" jdbcType="VARCHAR"/>
+            <result property="fSchool" column="F_SCHOOL" jdbcType="VARCHAR"/>
+            <result property="fAge" column="F_AGE" jdbcType="VARCHAR"/>
+            <result property="fRecord" column="F_RECORD" jdbcType="VARCHAR"/>
+            <result property="yhbh" column="YHBH" jdbcType="DECIMAL"/>
+            <result property="fBirthdate" column="F_BIRTHDATE" jdbcType="DATE"/>
+            <result property="fLawenforyear" column="F_LAWENFORYEAR" jdbcType="VARCHAR"/>
+            <result property="fEnforindustry" column="F_ENFORINDUSTRY" jdbcType="VARCHAR"/>
+            <result property="fCardid" column="F_CARDID" jdbcType="VARCHAR"/>
+            <result property="fUsertype" column="F_UserType" jdbcType="INTEGER"/>
+            <result property="fGasstationid" column="F_GasStationID" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        F_USERID,F_ACCOUNTCODE,F_ACCOUNTPASSWORD,
+        F_USERNAME,F_SEX,F_USERHEADURI,
+        F_MOBILEPHONE,F_OFFICETEL,F_OFFICEFAX,
+        F_POSTALADDRESS,F_POSTALCODE,F_EMAIL,
+        F_PASSWORDVALIDDATE,F_USERSTATE,F_ACCOUNTSTATE,
+        F_USERORDER,F_MAINUNITID,F_MAINDEPARTID,
+        F_MAINPOSITIONID,F_ISINITIALPWD,F_LOCKSTATE,
+        F_LOCKDATE,F_HOUSENO,F_ENFORCODE,
+        F_EPBENFORCODE,F_USERNUMBER,F_CREATEUSERID,
+        F_CREATEUSERNAME,F_CREATEDEPTID,F_CREATEDEPTNAME,
+        F_CREATEUNITID,F_CREATEUINTNAME,F_CREATETIME,
+        F_UPDATEUSERID,F_UPDATEUSERNAME,F_UPDATEDEPTID,
+        F_UPDATEDEPTNAME,F_UPDATEUNITID,F_UPDATEUNITNAME,
+        F_UPDATETIME,F_ISINSERVICE,F_ISPOST,
+        F_ISFIELDPER,F_MEPUPDATETIME,F_CITYUPDATETIME,
+        F_EDUCATIONCODE,F_SCHOOL,F_AGE,
+        F_RECORD,YHBH,F_BIRTHDATE,
+        F_LAWENFORYEAR,F_ENFORINDUSTRY,F_CARDID,
+        F_UserType,F_GasStationID
+    </sql>
+</mapper>

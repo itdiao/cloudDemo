@@ -1,0 +1,14 @@
+server:
+  port: 8007
+spring:
+  application:
+    name: j-cloud-consumer
+
+# eureka ≈‰÷√
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+logging:
+  level:
+    root: INFO

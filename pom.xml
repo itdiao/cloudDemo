@@ -6,6 +6,10 @@
     <modules>
         <module>cloud-eureka-server</module>
         <module>cloud-provider</module>
+        <module>cloud-customer</module>
+        <module>cloud-provider-t</module>
+        <module>cloud-eureka-server-b1</module>
+        <module>cloud-eureka-server-b2</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

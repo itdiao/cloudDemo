@@ -3,4 +3,4 @@ eureka:
     register-with-eureka: false   #表示是否向注册中心注册自己
     fetch-registry: false   #false表示自己为注册中心
     service-url:      #配置客户端所交互的Eureka(监控页面)
-      defaultZone: http://localhost:8030/eureka/,http://localhost:8031/eureka/
+      defaultZone: http://localhost:8031/eureka/,http://localhost:8032/eureka/

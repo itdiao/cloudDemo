@@ -1,14 +1,17 @@
+# 应用端口
 server:
-  port: 8007
+  port: 7902
 spring:
   application:
-    name: j-cloud-consumer
+    # 应用名称
+    name: provider-user
 
 # eureka 配置
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8030/eureka/
+
 logging:
   level:
     root: INFO
